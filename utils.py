@@ -17,8 +17,9 @@ MODEL_CLASSES = {
     'albert': (AlbertConfig, JointAlbert, AlbertTokenizer)
 }
 
+bert_path = './bert-base-chinese'
 MODEL_PATH_MAP = {
-    'bert': 'bert-base-uncased',
+    'bert': bert_path,
     'distilbert': 'distilbert-base-uncased',
     'albert': 'albert-xxlarge-v1'
 }
