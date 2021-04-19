@@ -5,12 +5,14 @@
 ## KGQA
 
 bert-base-chinese from https://huggingface.co/bert-base-chinese/tree/main
+```
 ./bert-base-chinese
 ./bert-base-chinese/config.json
 ./bert-base-chinese/pytorch_model.bin
 ./bert-base-chinese/tokenizer.json
 ./bert-base-chinese/tokenizer_config.json
 ./bert-base-chinese/vocab.txt
+```
 
 Training & Evaluation & Prediction
 
