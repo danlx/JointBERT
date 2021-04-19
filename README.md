@@ -2,6 +2,30 @@
 
 (Unofficial) Pytorch implementation of `JointBERT`: [BERT for Joint Intent Classification and Slot Filling](https://arxiv.org/abs/1902.10909)
 
+## KGQA
+
+bert-base-chinese from https://huggingface.co/bert-base-chinese/tree/main
+./bert-base-chinese
+./bert-base-chinese/config.json
+./bert-base-chinese/pytorch_model.bin
+./bert-base-chinese/tokenizer.json
+./bert-base-chinese/tokenizer_config.json
+./bert-base-chinese/vocab.txt
+
+Training & Evaluation & Prediction
+
+```bash
+$ python main.py --task kgqa \
+                  --model_type bert \
+                  --model_dir kgqa_model \
+                  --do_train --do_eval \
+                  --use_crf
+
+$ python predict.py --input_file {INPUT_FILE_PATH} --output_file {OUTPUT_FILE_PATH} --model_dir kgqa_model
+```
+
+
+
 ## Model Architecture
 
 <p float="left" align="center">
